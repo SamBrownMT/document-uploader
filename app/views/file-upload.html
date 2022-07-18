@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Name of Service</h1>
+
+      <form class="form" action="/summary" method="post">
+
+        <p>Description on what and why is needed to upload/provide</p>
+				<p>- Passport</p>
+				<p>- To see an example click here (pop up of ID e.g.)</p>	
+
+				<p>Insert video please</p>
+
+				<div class="govuk-form-group">
+					<label class="govuk-label" for="file-upload-1">
+						Upload Documentation:
+					</label>
+					<input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" accept=".jpg,.pdf">
+				</div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
