@@ -55,7 +55,7 @@
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
-              Change<span class="govuk-visually-hidden"> date of birth</span>
+              Change<span class="govuk-visually-hidden">{{ data['date-of-birth'] }}</span>
             </a>
           </dd>
         </div>
@@ -64,7 +64,7 @@
             Address
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ data['address-line-1'] }}<br>London<br>SE23 6FH
+            {{ data['address-line-1'] }}<br>{{ data['address-line-2'] }}<br>{{ data['address-line-3'] }}<br>{{ data['address-town'] }}<br>{{ data['address-postcode'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
