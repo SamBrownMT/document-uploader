@@ -51,7 +51,7 @@
             Date of birth
           </dt>
           <dd class="govuk-summary-list__value">
-            5 January 1978
+            {{ data['date-of-birth'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -77,8 +77,8 @@
             Contact details
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">07700 900457</p>
-            <p class="govuk-body">sarah.phillips@example.com</p>
+            <p class="govuk-body">{{ data['phone-number'] }}</p>
+            <p class="govuk-body">{{ data['email-address'] }}</p>
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -86,7 +86,7 @@
             </a>
           </dd>
         </div>
-        <div class="govuk-summary-list__row">
+        <!-- <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             File attachment
           </dt>
@@ -98,7 +98,7 @@
               Change<span class="govuk-visually-hidden"> name</span>
             </a>
           </dd>
-        </div>
+        </div> -->
       </dl>
 
       <form action="/file-upload" method="post">

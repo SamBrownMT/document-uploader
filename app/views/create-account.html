@@ -31,12 +31,12 @@
         {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <form action="/account" method="post">
+      <form action="/additional-info" method="post">
 
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Applicant Details
+              Create Account
             </h1>
           </legend>
         
@@ -51,24 +51,26 @@
             <label class="govuk-label" for="email-address">
               Email:
             </label>
-            <input class="govuk-input" id="email-address" name="email-address" type="text">
+            <input class="govuk-input" id="email-address" name="email-address" type="email">
           </div>
         
           <div class="govuk-form-group">
-            <label class="govuk-label" for="address">
-              Address:
+            <label class="govuk-label" for="password">
+              Password:
             </label>
-            <input class="govuk-input" id="address" name="address" type="text">
+            <input class="govuk-input" id="password" name="password" type="password">
           </div>
         
           <div class="govuk-form-group">
-            <label class="govuk-label" for="contact-details">
-              Contact Details:
+            <label class="govuk-label" for="confirm-password">
+              Confirm Password:
             </label>
-            <input class="govuk-input" id="contact-details" name="contact-details" type="text">
+            <input class="govuk-input" id="confirm-password" name="confirm-password" type="password">
           </div>
         
         </fieldset>
+
+        <!-- TO DO: Cannot proceed if password =/= confirm-password -->
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
