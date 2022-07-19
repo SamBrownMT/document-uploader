@@ -20,8 +20,6 @@
   <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 </div>
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -33,7 +31,7 @@
         {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <form action="/file-upload" method="post">
+      <form action="/account" method="post">
 
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
