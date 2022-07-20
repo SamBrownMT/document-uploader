@@ -41,7 +41,7 @@
             {{ data['full-name'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/create-account">
               Change<span class="govuk-visually-hidden"> name</span>
             </a>
           </dd>
@@ -51,10 +51,10 @@
             Date of birth
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ data['date-of-birth'] }}
+            {{ data['date-of-birth-day'] }}-{{ data['date-of-birth-month'] }}-{{ data['date-of-birth-year'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/additional-info">
               Change<span class="govuk-visually-hidden">{{ data['date-of-birth'] }}</span>
             </a>
           </dd>
@@ -64,10 +64,10 @@
             Address
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ data['address-line-1'] }}<br>{{ data['address-line-2'] }}<br>{{ data['address-line-3'] }}<br>{{ data['address-town'] }}<br>{{ data['address-postcode'] }}
+            {{ data['address-line-1'] }}<br>{{ data['address-line-2'] }}<br>{{ data['address-town'] }}<br>{{ data['address-postcode'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/additional-info">
               Change<span class="govuk-visually-hidden"> address</span>
             </a>
           </dd>
@@ -81,24 +81,12 @@
             <p class="govuk-body">{{ data['email-address'] }}</p>
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/additional-info">
               Change<span class="govuk-visually-hidden"> contact details</span>
             </a>
           </dd>
         </div>
-        <!-- <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            File attachment
-          </dt>
-          <dd class="govuk-summary-list__value">
-            name/of/file.jpg
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
-              Change<span class="govuk-visually-hidden"> name</span>
-            </a>
-          </dd>
-        </div> -->
+  
       </dl>
 
       <form action="/file-upload" method="post">

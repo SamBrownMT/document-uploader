@@ -48,7 +48,7 @@
             {{ data['full-name'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/create-account">
               Change<span class="govuk-visually-hidden"> name</span>
             </a>
           </dd>
@@ -58,10 +58,10 @@
             Date of birth
           </dt>
           <dd class="govuk-summary-list__value">
-            5 January 1978
+            {{ data['date-of-birth-day'] }}-{{ data['date-of-birth-month'] }}-{{ data['date-of-birth-year'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/additional-info">
               Change<span class="govuk-visually-hidden"> date of birth</span>
             </a>
           </dd>
@@ -71,10 +71,10 @@
             Address
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ data['address'] }}
+            {{ data['address-line-1'] }}<br>{{ data['address-line-2'] }}<br>{{ data['address-town'] }}<br>{{ data['address-postcode'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/additional-info">
               Change<span class="govuk-visually-hidden"> address</span>
             </a>
           </dd>
@@ -84,11 +84,11 @@
             Contact details
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">07700 900457</p>
-            <p class="govuk-body">sarah.phillips@example.com</p>
+            <p class="govuk-body">{{ data['phone-number'] }}</p>
+            <p class="govuk-body">{{ data['email-address'] }}</p>
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/additional-info">
               Change<span class="govuk-visually-hidden"> contact details</span>
             </a>
           </dd>
@@ -98,10 +98,10 @@
             File attachment
           </dt>
           <dd class="govuk-summary-list__value">
-            name/of/file.jpg
+            {{ data['file-upload-1'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
+            <a class="govuk-link" href="/file-upload">
               Change<span class="govuk-visually-hidden"> name</span>
             </a>
           </dd>
