@@ -5,6 +5,22 @@
 {% endblock %}
 
 {% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block beforeContent %}
   <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 {% endblock %}
 
@@ -19,7 +35,7 @@
 
         <div class="govuk-form-group">
 
-          <label class="govuk-label" for="email-address">Email Address:</label>
+          <label class="govuk-label" for="email-address">Email:</label>
 
           <input class="govuk-input" id="email-address" name="email-address" type="email">
 
@@ -33,7 +49,7 @@
 
         </div>
         
-        <p>Forgotten your password?</p>
+        <p><a href="#">Forgotten your password?</a></p>
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 

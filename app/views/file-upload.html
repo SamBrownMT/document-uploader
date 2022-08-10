@@ -26,18 +26,22 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Name of Service</h1>
+      <h1 class="govuk-heading-xl">Upload Your Documents</h1>
 
       <form class="form" action="/summary" method="post">
 
-        <p>Please upload one form of in-date ID from the list below:<br>
-           - Passport<br>
-           - UK Drivers Licence<br>
-           - Freedom Pass<br>
-           - Biometric residence permits
-           <br><br>
-         Your ID can be scanned or taken using your mobile or tablet device.<br>
-         We use the information and documents you provide, to confirm your identity. </p>
+        <p>The information and documents provided will be used to confirm your identity.<br>
+        <br>
+        Choose two forms of valid identification (ID) from the list below</p>
+        <br>
+        <ul>
+          <li>Passport</li>
+          <li>Drivers Licence</li>
+          <li>Birth Certificate</li>
+          <li>Biometric residence permits</li>
+        </ul>
+        <br>
+        <p>Upload your ID using your computer, mobile or tablet device.</p>
          
          
 
@@ -48,7 +52,18 @@
 					<input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" accept=".jpg,.pdf">
 				</div>
 
+
+        <div class="govuk-form-group">
+					<label class="govuk-label" for="file-upload-2">
+						Upload Documentation:
+					</label>
+					<input class="govuk-file-upload" id="file-upload-2" name="file-upload-2" type="file" accept=".jpg,.pdf">
+				</div>
+
         <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        <br>
+        <p><a href="#">ID upload help video</a></p>
 
       </form>
 

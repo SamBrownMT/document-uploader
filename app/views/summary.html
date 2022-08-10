@@ -4,12 +4,6 @@
   Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
-
-
-
-
-
-
 {% block beforeContent %}
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
@@ -31,13 +25,9 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-xl">Name of Service</h1>
+      <h1 class="govuk-heading-xl">Check your details are correct</h1>
 
-      <div id="more-detail-hint" class="govuk-hint">
-        <h2>Summary of application and submit</h2>
-      </div>
-
-      <form class="form" action="/confirmation" method="post">
+      <form class="form" action="/saveid" method="post">
 
       <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
@@ -81,34 +71,45 @@
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Contact details
+            Email</Address>
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">{{ data['phone-number'] }}</p>
             <p class="govuk-body">{{ data['email-address'] }}</p>
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="/additional-info">
-              Change<span class="govuk-visually-hidden"> contact details</span>
+              Change<span class="govuk-visually-hidden"> email address</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            File attachment
+            File attachment 1
           </dt>
           <dd class="govuk-summary-list__value">
             {{ data['file-upload-1'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="/file-upload">
-              Change<span class="govuk-visually-hidden"> name</span>
+              Change<span class="govuk-visually-hidden"> file upload 1</span>
+            </a>
+          </dd>
+          <br><br>
+          <dt class="govuk-summary-list__key">
+            File attachment 2
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['file-upload-2'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="/file-upload">
+              Change<span class="govuk-visually-hidden"> file upload 2</span>
             </a>
           </dd>
         </div>
       </dl>
         <button type="submit" class="govuk-button" data-module="govuk-button">
-          Submit application
+          Continue
         </button>
 
       </form>

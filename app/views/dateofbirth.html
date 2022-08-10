@@ -28,30 +28,17 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        {% if serviceName %} {{ serviceName }} {% endif %}
+        Update your profile
       </h1>
 
-      <form action="/account" method="post">
+      <form action="/address" method="post">
 
         <fieldset class="govuk-fieldset">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h1 class="govuk-fieldset__heading">
-              Additional Information
-            </h1>
-          </legend>
-        
-          <!-- <div class="govuk-form-group">
-            <label class="govuk-label" for="phone-number">
-              Phone number:
-            </label>
-            <input class="govuk-input" id="phone-number" name="phone-number" type="tel" pattern="[0-9]{*}" value={{ data['phone-number'] }}>
-          </div> -->
-        
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-birth-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  Date of Birth:
+                  Date of Birth
                 </h1>
               </legend>
               <div class="govuk-date-input" id="date-of-birth">
@@ -83,50 +70,6 @@
           
             </fieldset>
           </div>
-        
-          <fieldset class="govuk-fieldset">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-              <h1 class="govuk-fieldset__heading">
-                What is your address?
-              </h1>
-            </legend>
-          
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="address-line-1">
-                Address line 1
-              </label>
-              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}">
-            </div>
-          
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="address-line-2">
-                Address line 2 (optional)
-              </label>
-              <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" value="{{ data['address-line-2'] }}">
-            </div>
-          
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="address-town">
-                Town or city
-              </label>
-              <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}">
-            </div>
-          
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="address-postcode">
-                Postcode
-              </label>
-              <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="{{ data['address-postcode'] }}">
-            </div>
-
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="phone-number">
-                Phone number:
-              </label>
-              <input class="govuk-input" id="phone-number" name="phone-number" type="tel" pattern="[0-9]{11}" value="{{ data['phone-number'] }}">
-            </div>
-          
-          </fieldset>
         
         </fieldset>
 
